@@ -90,7 +90,6 @@ void showEl(string key, string type, vector<user*> userlist) { //Выводит 
 
 vector<user*> deleteElement(string key, string type ,vector<user*> userlist) { //Удаляет данные о пользователе с заданным ключом(надо указать тип ключа: имя, адрес, номер)
     user* buff;
-    user* buff;
     if (type == "name") buff = findByName(userlist, key);
     else if (type == "adress") buff = findByAdress(userlist, key);
     else if (type == "card") buff = findByCardNumber(userlist, key);
